@@ -316,16 +316,16 @@ body {
   margin-left: 20px;
 }
 
-a {
+.footera {
   text-decoration: none;
   color: black;
 }
 
-a:visited{
+.footera:visited{
   text-decoration: none;
 }
 
-a:hover {
+.footera:hover {
   color: blue;
 }
 

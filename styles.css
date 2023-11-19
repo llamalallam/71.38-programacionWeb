@@ -316,6 +316,19 @@ body {
   margin-left: 20px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited{
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+}
+
 @media (max-width: 768px) {
   body {
     padding-top: 40px;

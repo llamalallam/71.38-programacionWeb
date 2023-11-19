@@ -18,17 +18,17 @@
             <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
         </button>
         <ul class="nav-menu nav-menu_visible">
-            <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Encargados</a></li>
-            <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Deportes</a></li>
-            <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Preguntas frecuentes</a></li>
+            <li class="nav-menu-item"><a href="#Encargados" class="nav-menu-link nav-link">Encargados</a></li>
+            <li class="nav-menu-item"><a href="#Deportes" class="nav-menu-link nav-link">Deportes</a></li>
+            <li class="nav-menu-item"><a href="#FAQ" class="nav-menu-link nav-link">Preguntas frecuentes</a></li>
         </ul>
         <a href="#"><button class="nav-login">Ingresar</button></a>
     </nav>
 </header>
 <main>       
-    <section class="team">
+    <section class="team"></section> 
         <div class="section-header">
-            <h1>ENCARGADOS</h1><br>
+            <a id="anchor" name="Encargados"><h1>ENCARGADOS</h1><br></a>
             <p> Somos el equipo de Deportes de CEITBA. Nos encargamos de supervisar el correcto funcionamiento de los  Deportes y fomentar la actividad deportiva en la comunidad estudiantil.</p>
         </div>
         <div class="team-profile">
@@ -39,7 +39,7 @@
     </section>
     <section class="deportes">
         <div class="section-header">
-            <h1>NUESTROS DEPORTES</h1>
+            <a id="anchor" name="Deportes"><h1>NUESTROS DEPORTES</h1></a>
         </div>
         <div class="container-carousel">
             <div class="wrapper">
@@ -61,7 +61,7 @@
     </section>
     <section class="FAQ">
         <div class="section-header">
-            <h1>PREGUNTAS FRECUENTES</h1>
+            <a class="enlace_interno" name="FAQ"><h1>PREGUNTAS FRECUENTES</h1></a>
         </div>
         <div class="container-FAQ">
             <div class="pregunta">
@@ -69,7 +69,7 @@
                     <h3>¿Puedo sumarme siendo ingresante o graduado?</h3>
                 </div>
                 <div class="respuesta activo">
-                    Si. El único requisito es ser socio de CEITBA. Si aún no lo sos, enviá un email a <b>ceitba@itba.edu.ar</b> bajo el asunto <b>"Alta socio CEITBA"</b>
+                    <br>Si. El único requisito es ser socio de CEITBA. Si aún no lo sos, enviá un email a <b>ceitba@itba.edu.ar</b> bajo el asunto <b>"Alta socio CEITBA"</b>
                 </div>
             </div>
             <div class="pregunta">
@@ -77,7 +77,7 @@
                     <h3>¿Se requiere algún nivel previo en el deporte?</h3>
                 </div>
                 <div class="respuesta activo">
-                    Todos los deportes se practican de forma amateur y están abiertos a todos los niveles. Aquellos que lo deseen y bajo consideración del entrenador a cargo, podrán conformar los equipos que representan a la universidad en los Torneos Interuniversitarios amateur.
+                    <br>Todos los deportes se practican de forma amateur y están abiertos a todos los niveles. Aquellos que lo deseen y bajo consideración del entrenador a cargo, podrán conformar los equipos que representan a la universidad en los Torneos Interuniversitarios amateur.
                 </div>
             </div>
             <div class="pregunta">
@@ -85,14 +85,23 @@
                     <h3>¿Qué pasa si falto a algún entrenamiento?</h3>
                 </div>
                 <div class="respuesta activo">
-                    No pasa nada siempre y cuando avisen al entrenador a cargo, entendemos que hay épocas que puede complicarse la asistencia. En particular, <b>durante los meses de exámenes finales se suspende la actividad deportiva</b>
+                    <br>No pasa nada siempre y cuando avisen al entrenador a cargo, entendemos que hay épocas que puede complicarse la asistencia. En particular, <b>durante los meses de exámenes finales se suspende la actividad deportiva</b>
                 </div>
             </div>
         </div>
     </section>
 </main>
 <footer>
-    <h2>Institucional</h2>
+    <div class="footer-wrapper">
+        <div class="footer-button">
+            <div class="ficon"><i class="fa-brands fa-instagram"></i></div>
+            <span>@ceitba</span>
+        </div>
+        <div class="footer-button">
+            <div class="ficon"><i class="fa-regular fa-envelope"></i></div>
+            <span>ceitba@itba.edu.ar</span>
+        </div> 
+    </div>       
 </footer>
 </body>
 </html>

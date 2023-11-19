@@ -1,3 +1,5 @@
+//Tres barritas para navbar escondida
+
 const navToggle = document.querySelector(".nav-toggle")
 const navMenu = document.querySelector(".nav-menu")
 
@@ -10,6 +12,8 @@ navToggle.addEventListener("click", () =>{
             navToggle.setAttribute("aria-label", "Abrir menu");
         }
 })
+
+// Carrusel de los deportes
 
 const carousel = document.querySelector(".carousel");
 firstImg = carousel.querySelectorAll("img")[0];
@@ -62,11 +66,13 @@ carousel.addEventListener("mouseup", dragStop);
 carousel.addEventListener("mouseleave", dragStop);
 carousel.addEventListener("touchend", dragStop);
 
+//expansor de pregnutas
+
 const preguntas = document.querySelectorAll(".pregunta_encabezado");
 
 preguntas.forEach ((pregunta) => {
+    removerClaseActivo();
     pregunta.addEventListener("click", () =>{
-        removerClaseActivo();
         pregunta.nextElementSibling.classList.toggle("activo");
     })
 });

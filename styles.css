@@ -1,12 +1,13 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   }
 
 body {
   font-family: sans-serif;
   margin: none;
-  padding: 60px 0px;
+  padding: 20px 0px;
   background-color: aliceblue;
   }
 
@@ -17,6 +18,7 @@ body {
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 10;
 }
 
 .nav{
@@ -96,6 +98,7 @@ body {
 .team{
   padding: 20px;
   background-color: white;
+  z-index: 7;
 }
 
 .section-header{
@@ -156,6 +159,7 @@ body {
 .deportes{
   padding: 20px;
   background-color: rgb(183, 205, 219);
+  z-index: 7;
 }
 
 .container-carousel{
@@ -205,7 +209,7 @@ body {
 }
 
 .carousel.dragging{
-  pointer:none;
+  cursor:none;
 }
 
 .carousel.dragging img{
@@ -244,6 +248,7 @@ body {
   border: 2px solid gray;
   border-radius: 10px;
   padding: 1rem;
+  
 }
 
 .pregunta_encabezado{
@@ -255,6 +260,7 @@ body {
 .respuesta{
   height: 0;
   opacity: 0;
+  text-align: justify;
 }
 
 .respuesta.activo{
@@ -262,6 +268,52 @@ body {
   opacity: 1;
 }
 
+.footer{
+  z-index: 7;
+  box-sizing: border-box;
+  padding: 0;
+  width: 80%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.footer-wrapper{
+  display: flex;
+  justify-content: right;
+  max-width: 90%;
+}
+
+.footer-button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 20px 20px;
+  background: white;
+  border-radius: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+}
+
+.footer-button:hover{
+  width: fit-content;
+  padding: 0 20px;
+  display: flex;
+  transition: all 0.5s ease-out;
+}
+
+.ficon {
+  line-height: 60px;
+  text-align: center;
+  scale: 1.5;
+}
+
+.footer-button span{
+  font-size: 20px;
+  text-align: center;
+  line-height: 60px;
+  margin-left: 20px;
 }
 
 @media (max-width: 768px) {
